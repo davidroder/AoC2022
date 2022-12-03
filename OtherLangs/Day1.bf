@@ -74,7 +74,7 @@
 
 
 
-part 2
+part 2 (Not done, this is just part 1 again atm)
 >>>>>,[  (4)=inp
     >+[ (5) = 1
         [    
