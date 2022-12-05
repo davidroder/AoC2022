@@ -1,2 +1,5 @@
 Input
 *.kmd
+*.hi
+*.o
+*.exe
