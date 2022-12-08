@@ -42,7 +42,7 @@ size (Dir s _ _) = s
 
 parseFileName :: ReadP FileSystem
 parseFileName = do
-    size <- read @Int <$> many1 (satisfy isDigit)
+    size <- read <$> many1 (satisfy isDigit)
     char ' '
     name <- manyTill get (char '\n')
     return $ File size name
