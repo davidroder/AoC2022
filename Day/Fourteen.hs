@@ -51,10 +51,7 @@ placeSand (y,x) = do
     guard $ S.notMember (y,x) s
     (floor, m) <- ask
     if y >= m
-    then
-        if floor 
-        then empty 
-        else return False
+    then guard (not floor) $> False
     else placeSand (y+1,x) <|>
         placeSand (y+1,x-1) <|>
         placeSand (y+1,x+1) <|>
