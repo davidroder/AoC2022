@@ -1,4 +1,5 @@
 {-# LANGUAGE TypeApplications #-}
+{-# LANGUAGE InstanceSigs #-}
 module Day.Thirteen (part1, part2) where
 import Text.Read ( Read(readPrec), ReadPrec, (<++), readMaybe )
 import Util (split)

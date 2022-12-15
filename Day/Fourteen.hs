@@ -1,4 +1,5 @@
 {-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE TupleSections #-}
 module Day.Fourteen (part1, part2) where
 import Util (split)
 import Text.ParserCombinators.ReadP (ReadP, sepBy, string, munch1, char, readP_to_S, eof)
